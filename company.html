@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <!--
+  <meta name="description"
+    content="株式会社STARTは、幸せにつながるお仕事を紹介する人材紹介会社です。人材紹介サービス『スタート』や人材紹介SNS『ゴール』を運営し、またWebデザインを学べるスクール『Webの学校』を開講しています。" />
+  -->
+  <meta name="description" content="無料コーディング練習所 企業サイト練習用"><title>会社概要 - START</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link href="css/destyle.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="img/icon/icon-192x192.png">
+  <link rel="apple-touch-icon" type="image/png" href="img/icon/apple-touch-icon-180x180.png">
+  <link rel="icon" href="img/icon/favicon.ico">
+</head>
+
+<body>
+
+  <!-- wrapper-->
+  <div class="wrapper">
+
+    <!-- header -->
+    <header id="header" class="header"></header>
+    <!-- /header -->
+
+    <!--page-header-->
+    <div id="pageheader" class="page-header"></div>
+    <!--/page-header-->
+
+    <!--content-->
+    <main class="content">
+
+      <!--company-info-->
+      <div id="companyinfo" class="company-info"></div>
+      <!--/company-info-->
+
+      <!--company-news-->
+      <div id="companynews" class="company-news"></div>
+      <!--/company-news-->
+
+    </main>
+    <!--/content-->
+
+    <!-- footer -->
+    <footer id="footer" class="footer"></footer>
+    <!-- /footer -->
+
+  </div>
+  <!-- /wrapper -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $("#header").load("component/header.html");
+    $("#pageheader").load("component/pageheader.html");
+    $("#companyinfo").load("component/companyinfo.html");
+    $("#companynews").load("component/companynews.html");
+    $("#footer").load("component/footer.html");
+  </script>
+
+</body>
+</html>

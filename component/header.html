@@ -1,0 +1,30 @@
+<div class="header__logo">
+  <a href="."><img src="img/logo.svg" alt="START"></a>
+</div>
+<div class="header__nav">
+  <nav class="gnav">
+    <ul class="gnav__list">
+      <li class="gnav__item"><a class="gnav__link" href=".">ホーム</a></li>
+      <li class="gnav__item"><a class="gnav__link" href="message.html">メッセージ</a></li>
+      <li class="gnav__item"><a class="gnav__link" href="company.html">会社概要</a></li>
+    </ul>
+  </nav>
+  <button type="button" id="js-btn-menu" class="btn-menu">
+    <span class="btn-menu__line"></span>
+  </button>
+</div>
+
+<script>
+{
+  const pathname = location.pathname;
+  //console.log(pathname);
+  //
+  if(pathname.includes("message")){
+    $(".gnav__list > li:nth-of-type(2) > a").addClass("gnav__link--active");
+  }else if(pathname.includes("company")){
+    $(".gnav__list > li:nth-of-type(3) > a").addClass("gnav__link--active");
+  }else{
+    $(".gnav__list > li:nth-of-type(1) > a").addClass("gnav__link--active");
+  }
+}
+</script>
